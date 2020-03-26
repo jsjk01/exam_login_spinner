@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".Detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/app_page"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_toEndOf="@id/app_page"
+            android:layout_centerVertical="true"
+            android:gravity="center|left">
+            <TextView
+                android:id="@+id/detail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="测试"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/detail_tips"
+                android:layout_below="@id/detail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:text="测试"/>
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/installapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线申报"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详情页"
+        android:textSize="80sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

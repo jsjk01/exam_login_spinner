@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">轻灵成人考试自主报名系统</string>
+    <array name="school">
+        <item>福建农林大学金山学院</item>
+        <item>北京大学</item>
+        <item>吉林大学</item>
+        <item>厦门大学</item>
+        <item>南开大学</item>
+        <item>北京理工大学</item>
+        <item>福州大学</item>
+        <item>福州师范大学</item>
+        <item>清华大学</item>
+        <item>福建中医药大学</item>
+        <item>中山大学</item>
+        <item>东京大学</item>
+        <item>哈佛大学</item>
+    </array>
+    <array name="zhuanye">
+        <item>计算机科学与技术</item>
+        <item>电子信息及其自动化</item>
+        <item>法医</item>
+        <item>医学影像技术</item>
+        <item>信息管理与信息系统</item>
+        <item>城市管理</item>
+        <item>电子商务</item>
+        <item>作曲与作曲技术理论</item>
+        <item>视觉传达设计</item>
+        <item>资源与环境经济学</item>
+        <item>政治学、经济学与哲学</item>
+        <item>国内安全保卫</item>
+        <item>古生物学</item>
+    </array>
+
+    <array name="daoshi">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+    </array>
+</resources>

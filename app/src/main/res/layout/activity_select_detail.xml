@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".SelectDetail">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/cache"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textColor="#d63447"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/now_apply"/>
+    <TextView
+        android:layout_marginTop="110dp"
+        android:id="@+id/select_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="报名信息"
+        android:textSize="45sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <RelativeLayout
+        android:layout_below="@id/select_title"
+        android:id="@+id/school_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/non_xuexiao"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:text="学校选择："
+            android:layout_centerVertical="true"/>
+        <Spinner
+            android:layout_toEndOf="@id/non_xuexiao"
+            android:entries="@array/school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/school_spinner"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/school_info"
+        android:id="@+id/zhuanye_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/zhuanyexueze"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:text="专业选择："
+            android:layout_centerVertical="true"/>
+        <Spinner
+            android:layout_toEndOf="@id/zhuanyexueze"
+            android:entries="@array/zhuanye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/class_spinner"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/zhuanye_info"
+        android:id="@+id/daoshi_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/non_daoshi"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:text="导师选择："
+            android:layout_centerVertical="true"/>
+        <Spinner
+            android:layout_toEndOf="@id/non_daoshi"
+            android:entries="@array/daoshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/daoshi_spinner"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirm_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_below="@id/daoshi_info"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
